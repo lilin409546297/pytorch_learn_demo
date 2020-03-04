@@ -47,7 +47,7 @@ def cnn_train():
 def cnn_test():
     # 1、加载模型、设备
     device = torch.device("cpu")
-    net = LeNet5().to(device)
+    net = ResNet18().to(device)
     net.load_state_dict(torch.load("./model/resNet18.pkl"))
 
     # 2、准备测试数据
